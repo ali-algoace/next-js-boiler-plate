@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import NoInternetWrapper from "@/components/common/NoInternetWrapper/NoInternetWrapper";
+import { Toaster } from "@/components/ui/sonner";
+import NextTopLoader from "nextjs-toploader";
+import ReactQueryProvider from "@/providers/ReactQueryProvider";
+import { Suspense } from "react";
+import LoadingComponent from "@/components/common/LoadingComponent/LoadingComponent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +31,27 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
       >
-        {children}
+        <Suspense fallback={<LoadingComponent />}>
+          <NextTopLoader
+            color="#000000"
+            initialPosition={0.08}
+            crawlSpeed={200}
+            height={3}
+            crawl={true}
+            showSpinner={false}
+            zIndex={1600}
+          />
+          <Toaster position="top-right" />
+          <NoInternetWrapper>
+            {" "}
+            <ReactQueryProvider>
+              {children}
+              <Toaster />
+            </ReactQueryProvider>
+          </NoInternetWrapper>
+        </Suspense>
       </body>
     </html>
   );

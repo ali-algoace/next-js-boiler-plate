@@ -1,0 +1,50 @@
+{
+  "main": {
+    "name": "ali"
+  },
+  "labels": {
+    "noInternetConnection": "No internet connection!",
+    "pleaseCheckConnection": "Please check your network connection",
+    "forgotPassword": "Forgot Password",
+    "codeText": " Didn’t get code?",
+    "dontHaveAnAccount": "Don't have an account?",
+    "registerNow": "Register Now",
+    "alreadyHaveAnAccount": "Already have an account?",
+    "loginNow": "Login Now"
+  },
+  "button": {
+    "tryAgain": "Try Again",
+    "login": "Login",
+    "signup": "Signup",
+    "verifyCode": "Verify Code",
+    "sendEmail": "Send Email",
+    "verifyResetPassword": "Verify & Reset Password",
+    "resend": "Resend"
+  },
+  "errors": {
+    "someThingWentWrongTryAgain": "Something went wrong! Please try again",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "confirmPasswordRequired": "Confirm Password is required",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "validPassword": "Password must contain at least 8 characters,  including at least one uppercase letter, one lowercase letter, one number, and one special character.",
+    "validEmail": "Valid email is required",
+    "confirmPassword": "Both passwords should same",
+    "enterOtp": "Please enter the OTP",
+    "validOtp": "OTP Must Be 6 Digits",
+    "firstNameReq": "First name is required",
+    "firstNameAlpha": "First name can contain only alphabets and spaces",
+    "lastNameReq": "Last name is required",
+    "lastNameAlpha": "Last name can contain only alphabets, spaces and dot",
+    "nameShort": "Minimum 2 characters are required",
+    "nameLong": "Maximum 25 characters are allowed"
+  },
+  "placeholder": {
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter your password",
+    "confirmPassword": "Enter your confirm password",
+    "firstName": "Enter your first name",
+    "lastName": "Enter your last name"
+  },
+  "success": {}
+}

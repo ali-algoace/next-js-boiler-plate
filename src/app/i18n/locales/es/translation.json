@@ -1,0 +1,15 @@
+{
+  "main": {
+    "name": "amdani"
+  },
+  "labels": {
+    "noInternetConnection": "No internet connection!",
+    "pleaseCheckConnection": "Please check your network connection"
+  },
+  "button": {
+    "tryAgain": "Try Again"
+  },
+  "errors": {
+    "someThingWentWrongTryAgain": "Something went wrong! Please try again"
+  }
+}
